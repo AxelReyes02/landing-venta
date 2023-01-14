@@ -1,0 +1,12 @@
+
+
+
+#b4ff46 Verde Oferta
+#9146ff MORADO jumbo
+#ffffff BLANCO blog
+#000000 Negro foooter
+#b1b1bb gris para footer _ letras
+
+
+#3c1c6a al momento de pasar sobre un apartado en header
+///
