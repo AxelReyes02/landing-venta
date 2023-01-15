@@ -2,5 +2,6 @@
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairsHorizontal": true,
-  "editor.guides.highlightActiveBracketPair": false
+  "editor.guides.highlightActiveBracketPair": false,
+  "liveServer.settings.port": 5502
 }

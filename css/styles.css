@@ -226,3 +226,72 @@ border-radius: 4px;
 transition: 0.4s ease-out;
 
 }
+
+
+/*Cataologo*/
+
+.grid-cards{
+
+
+display: grid;
+grid-template-columns: repeat(4,1fr);
+padding-left: 30px;
+padding-right: 30px;
+
+padding-top: 30px;
+
+
+
+}
+
+ .card{
+
+
+width: 300px;
+height: 245px;
+align-items: center;
+padding-top: 50px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.card img{
+
+
+max-width: 150px;
+object-fit: cover;
+height: auto;
+display: block;
+position: relative;
+
+}
+
+.zoom {
+    
+    background-color: transparent;
+    transition: transform .2s; 
+   
+   
+  }
+  .zoom:hover {
+    transform: scale(1.09); 
+  }
+
+.card a{
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-family: roobert;
+   font-weight: bold;
+    color: black;
+
+
+}
+
+.card p{
+
+
+padding: 10px;
+
+}
