@@ -228,7 +228,7 @@ transition: 0.4s ease-out;
 }
 
 
-/*Cataologo*/
+/*Catalogo*/
 
 .grid-cards{
 
@@ -237,7 +237,6 @@ display: grid;
 grid-template-columns: repeat(4,1fr);
 padding-left: 30px;
 padding-right: 30px;
-
 padding-top: 30px;
 
 
@@ -294,4 +293,66 @@ position: relative;
 
 padding: 10px;
 
+}
+/*Adicional*/
+
+.grid-aditional{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+
+}
+
+.grid-aditional img{
+
+    position: relative;
+
+    height: 300px;
+    width: 100%;
+
+
+}
+
+
+
+
+.reward2 h2{
+    position: relative;
+    bottom: -40px;
+    text-align: center;
+    font-family: roobert;
+
+}
+
+.reward2 p{
+
+    bottom: -80px;
+    text-align: center;
+    position: relative;
+
+}
+
+.reward2 button{
+
+position: relative;
+bottom: -110px;
+right: -280px;
+font-size: 20px;
+font-weight: bold;
+border: none;
+background-color: black;
+color: white;
+font-family: roobert;
+padding: 12px 12px;
+border-radius: 4px;
+
+
+}
+
+
+.reward2 button:hover{
+
+    color:#b1b1bb;
+    transition: 0.4s ease-out;
 }

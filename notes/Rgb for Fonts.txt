@@ -8,5 +8,11 @@
 #b1b1bb gris para footer _ letras
 
 
-#3c1c6a al momento de pasar sobre un apartado en header
+
 ///
+
+.navbar a:hover{ 
+
+    color: black;
+    transition: 0.2s ease-out;
+}
