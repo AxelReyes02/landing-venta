@@ -9,10 +9,15 @@
 @import url('https://fonts.cdnfonts.com/css/roobert');
 
 
-
-body{
+ h1{
 
     font-family: roobert;
+
+}
+
+p{
+
+font-family: roobert;
 
 }
 
@@ -23,8 +28,12 @@ body{
 .banner {
 
 background-color: black;
-height: 45px;
+height: 47px;
 padding: 12px 16px;
+width:  100%;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+z-index: 1;
+position: fixed;
 
 
 }
@@ -39,7 +48,6 @@ padding: 12px 16px;
 
 
 text-align: center;
-
 font-weight: bold;
 font-family: promo;
 font: 16px;
@@ -58,7 +66,11 @@ font: 16px;
 
 header{
 
-    background-color: #ffffff;
+    background-color:#ffffff;
+    height: 140px;
+    width: 100%;
+    padding-top: 30px;
+
 }
 
 .container {
@@ -72,10 +84,16 @@ header{
 
 
 
+
 .logo img {
 
 width: 175px;
 cursor: pointer;
+
+
+
+
+
 }
 
 
@@ -133,18 +151,78 @@ transition: 0.2s ease-out;
 }
 
 
-.jumbotron{
+                                        /*Jumbotron*/
 
-width: 100%;
-background-color: #9146ff;
-padding: 30px 10px 50px;
-/*arriba , izq der, abajo*/
-color: #ffffff;
+
+.deku img{
+
+
+position: relative;
+
+bottom: -20px;
+height: 100%;
+left: 30px;
+
 
 }
 
 
 
+.grid{
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.grid div{
+
+
+    background-color: #9146ff;
+    padding: 20px 0px 20px;
+    /*border: 1px solid black;*/
+
+}
+
+
+.description p{
+
+    font-size:20px;
+    padding-top: 50px;
 
 
 
+}
+
+
+.form-group{
+
+    font-family: roobert;
+}
+
+
+.grid input{
+
+    font-size:15px;
+    width: 400px;
+}
+.grid button{
+
+font-size: 20px;
+font-weight: bold;
+border: none;
+background-color: black;
+color: white;
+font-family: roobert;
+padding: 12px 12px;
+border-radius: 4px;
+}
+
+.grid button:hover{
+
+
+    color:#b1b1bb;
+transition: 0.4s ease-out;
+
+}
