@@ -1,4 +1,4 @@
-* {
+* {t
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +13,8 @@ h1 {
 p {
   font-family: roobert;
 }
+
+
 
 .banner {
   background-color: black;
@@ -32,7 +34,6 @@ p {
 .paragraph {
   text-align: center;
   font-weight: bold;
-  font-family: promo;
   font: 16px;
 }
 
@@ -48,7 +49,10 @@ header {
   padding-top: 30px;
 }
 
-.container {
+
+
+/*Con container queda centrado (acorde)*/
+.container { 
   max-width: 100%;
   margin: 0 auto;
 }
@@ -98,13 +102,40 @@ header {
 
 /*Jumbotron*/
 
-.deku img {
-  position: relative;
+.jumbo{
 
+  width: 100%;
+  background-color: #9146ff;
+
+}
+
+
+.deku{
+
+
+display: flex;
+justify-content: center;
+
+
+}
+
+
+
+.deku img {
+
+  width: 90%;
+  padding-left: 30px;
   bottom: -20px;
   height: 100%;
-  left: 30px;
+  
 }
+
+
+.articles{
+
+  padding: 30px 0;
+}
+
 
 .articles h1 {
   padding-top: 20px;
@@ -123,13 +154,20 @@ header {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
-.grid div {
-  background-color: #9146ff;
-  padding: 20px 0px 20px;
-  /*border: 1px solid black;*/
+
+
+
+.description{
+width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
+
 
 .description p {
   font-size: 20px;
@@ -155,6 +193,8 @@ header {
   border-radius: 4px;
 }
 
+
+
 .grid button:hover {
   color: #b1b1bb;
   transition: 0.4s ease-out;
@@ -163,15 +203,16 @@ header {
 /*Catalogo*/
 
 .grid-cards {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+  gap: 1rem; /*Espacio que se le va poner a los contenedores hijos que tengan flex, flex y grid*/
+  padding: 1rem;
+
 }
 
 .card {
-  width: 300px;
+  width: 100%;
   height: 245px;
   align-items: center;
   padding-top: 50px;
@@ -217,32 +258,36 @@ header {
 
 .grid-aditional img {
   position: relative;
-
-  height: 300px;
-  width: 100%;
+  width: 90%;
   padding-left: 20px;
-
   margin: 25px;
   opacity: 0.8;
 }
 
-.reward2 h2 {
-  position: relative;
-  bottom: -40px;
-  text-align: center;
-  font-family: roobert;
+.reward2{
+
+
+display: flex;
+flex-direction: column;
+gap:40px;
+justify-content: center;
+width: 80%;
+align-items: center;
 }
 
 .reward2 p {
-  bottom: -80px;
-  text-align: center;
-  position: relative;
+ 
+ 
+  font-family: roobert;
 }
 
+.reward2 h2 {
+ 
+  font-family: roobert;
+}
+
+
 .reward2 button {
-  position: relative;
-  bottom: -110px;
-  right: -280px;
   font-size: 20px;
   font-weight: bold;
   border: none;
@@ -251,6 +296,7 @@ header {
   font-family: roobert;
   padding: 12px 12px;
   border-radius: 4px;
+  width: 80%;
 }
 
 .reward2 button:hover {
@@ -266,7 +312,15 @@ footer {
   color: #b1b1bb;
 }
 
+
+.footer-title{
+  text-align: center;
+}
+
+
+
 .footer-container h2 {
+ 
   display: flex;
   justify-content: center;
   color: #b1b1bb;
@@ -286,6 +340,10 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+
+
+
 
 .redes-sociales i {
   font-size: 30px;
@@ -307,6 +365,10 @@ footer {
   justify-content: space-between;
 }
 
+
+
+
+
 .container-footer h2 {
   font-size: 10px;
   display: flex;
@@ -323,7 +385,7 @@ li {
 
 .container-footer li {
   font-size: 20px;
-
+  text-align: center;
   font-weight: bold;
 }
 
@@ -333,17 +395,37 @@ li {
 }
 
 /*Responsive*/
-/**4 mangas**/
-@media screen and (max-width: 990px) {
-  .grid-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .grid-aditional {
-    grid-template-columns: repeat(1, 1fr);
-  }
+@media (min-width:240px) and (max-width: 900px){
+          .grid-cards, .grid, .grid-aditional{
+        grid-template-columns: 1fr;
+          }
 
-  .grid-footer {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+          .grid-footer {
+            flex-direction: column;
+          }
+          
+          footer{
+
+            padding: 0.5rem;
+          }
+
+          .container-footer li{
+
+            text-align: center;
+
+          }
+
+
+         
+        }
+
+
+        @media (min-width:240px) and (max-width: 1115px){
+
+        .navbar ul li a {
+          display: none;
+         }
+
+
+        }
